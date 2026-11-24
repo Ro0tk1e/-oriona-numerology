@@ -11,3 +11,9 @@ secrets*
 *.log
 node_modules/
 .DS_Store
+
+# private photo - keep out of GitHub
+swpna.*
+WhatsApp Image*
+*.jpeg
+*.jpg

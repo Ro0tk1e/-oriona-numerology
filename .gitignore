@@ -1,1 +1,13 @@
 WhatsApp Image*
+
+# never commit secrets
+.env
+.env.*
+*.pem
+*.key
+*.p12
+id_rsa*
+secrets*
+*.log
+node_modules/
+.DS_Store

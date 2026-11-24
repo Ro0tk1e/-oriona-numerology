@@ -2097,3 +2097,52 @@ section[id] {
 @media (max-width: 450px) {
     .number-circle { width: 210px; height: 210px; }
 }
+
+
+/* ---------- Intro grid art ---------- */
+
+.intro-grid-art {
+    width: 185px;
+    height: 185px;
+    display: block;
+    margin: 18px auto 0;
+    overflow: visible;
+}
+
+.intro-grid-art .lo-ring {
+    fill: none;
+    stroke: var(--gold-light);
+    stroke-opacity: 0.25;
+    stroke-width: 0.8;
+}
+
+.intro-grid-art .lo-box {
+    fill: none;
+    stroke: var(--gold-light);
+    stroke-width: 1.2;
+}
+
+.intro-grid-art .lo-line {
+    stroke: var(--gold-light);
+    stroke-opacity: 0.55;
+    stroke-width: 0.8;
+}
+
+.intro-grid-art .lo-glow {
+    fill: var(--gold-light);
+    fill-opacity: 0.16;
+}
+
+.intro-grid-art text {
+    font-family: var(--serif);
+    font-size: 36px;
+    fill: rgba(255, 255, 255, 0.92);
+}
+
+.intro-grid-art .lo-center {
+    fill: var(--gold-light);
+}
+
+@media (max-width: 450px) {
+    .intro-grid-art { width: 150px; height: 150px; }
+}

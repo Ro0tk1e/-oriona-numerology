@@ -2167,3 +2167,14 @@ section[id] {
     .services-grid { grid-template-columns: 1fr; }
     .service-card-wide { grid-column: auto; }
 }
+
+
+/* ---------- About photo ---------- */
+
+.about-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    display: block;
+}

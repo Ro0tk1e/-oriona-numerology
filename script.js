@@ -128,16 +128,22 @@ if (bookingForm) {
         const phone = formData.get("phone") || "";
         const email = formData.get("email") || "";
         const service = formData.get("service") || "General Enquiry";
+        const PRICES = {
+            "Name Correction Consultation": "₹7,499",
+            "Mobile Number Energy Reading": "₹5,100",
+            "Complete Numerology Consultation": "₹10,000"
+        };
+        const price = PRICES[service] ? ` (${PRICES[service]})` : "";
         const userMessage = formData.get("message") || "";
 
         const message = `Hello Oriona Numerology!
 
-I would like to enquire about a consultation.
+I would like to book a consultation.
 
 Name: ${name}
 Phone: ${phone}
 Email: ${email}
-Consultation: ${service}
+Consultation: ${service}${price}
 
 My Message:
 ${userMessage}

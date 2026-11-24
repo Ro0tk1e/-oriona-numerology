@@ -2178,3 +2178,58 @@ section[id] {
     object-position: center 25%;
     display: block;
 }
+
+
+/* ---------- Mobile performance and spacing ---------- */
+
+@media (max-width: 900px) {
+    .navbar {
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+        background: rgba(247, 243, 235, 0.98);
+    }
+
+    .hero-glow { filter: none; }
+
+    .hero,
+    .hero-container {
+        min-height: 0;
+    }
+
+    .hero {
+        padding-bottom: 50px;
+    }
+
+    .hero-container {
+        padding-top: 40px;
+    }
+
+    .hero-visual {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 900px) and (hover: none) {
+    .service-book:hover,
+    .btn:hover {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+img { max-width: 100%; }
+
+button, a, input, select, textarea {
+    touch-action: manipulation;
+}
+
+input, select, textarea {
+    font-size: 16px; /* stops iOS zooming in on focus */
+}
